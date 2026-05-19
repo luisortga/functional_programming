@@ -10,7 +10,9 @@ import java.util.stream.Collectors;
 
 public class ProductRun {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
+
+        args.clone();
 
         // Lista de productos
         List<Producto> productos = Arrays.asList(
@@ -61,7 +63,7 @@ public class ProductRun {
         // 5.- Calcular el precio promedio de los productos por categoría
 
         Map<String, Double> promPorCat = productos.parallelStream()
-                .collect(Collectors.groupingBy(Producto::getCategoria, Collectors.averagingDouble(p -> p.getPrecio())));
+                .collect(Collectors.groupingBy(Producto::getCategoria, Collectors.averagingDouble(Producto::getPrecio)));
 
         System.out.println("El precio por categoría es: " + promPorCat);
 
