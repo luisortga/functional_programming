@@ -31,10 +31,10 @@ public class ProductRun {
                 new Producto("Carne", "carnes", 2, 6.5)
         );
 
-        // 1.- filtrar productos de la categoría "frutas"
+        // 1.- filtrar productos de la categoría
         List<Producto> frutas = productos.stream()
                 .filter(p -> p.getCategoria().equals("frutas"))
-                .collect(Collectors.toList());
+                .toList();
         frutas.forEach(System.out::println);
 
         // 2.- Calcular el precio total de los productos en "lácteos"
