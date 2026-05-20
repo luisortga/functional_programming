@@ -10,6 +10,10 @@ import java.util.stream.Collectors;
 
 public class ProductRun {
 
+    public ProductRun() {
+
+    }
+
     static void main(String[] args) {
 
         args.clone();
