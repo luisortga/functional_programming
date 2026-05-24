@@ -11,7 +11,7 @@ public class Hilo extends Thread {
 
     public void run() {
 		System.out.println("Hilo ejecutandose con clasa Thread");
-
+        Hilo.count();
 		// class Runnable
 	}
 
