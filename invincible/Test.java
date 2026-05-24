@@ -9,5 +9,9 @@ public class Test {
 
         Hilo proceso = Hilo.createHilo();
         proceso.start();
+
+        Hilo.count();
+        Hilo.count();
+        System.out.println(Hilo.iterador);
     }
 }
