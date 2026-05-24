@@ -1,7 +1,7 @@
 package functional_programming.invincible;
 
 public class Hilo extends Thread {
-
+    public static int iterador = 0;
     private Hilo() {
     }
 
@@ -14,6 +14,12 @@ public class Hilo extends Thread {
 
 		// class Runnable
 	}
+
+    public static int count() {
+        Hilo hilo = Hilo.createHilo();
+        Hilo.iterador += 1;
+        return Hilo.iterador;
+    }
 
 	@Override
 	public String toString() {
