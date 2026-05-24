@@ -6,5 +6,8 @@ public class Test {
 
         advanced.Test.main(new String[0]);
         //
+
+        Hilo proceso = Hilo.createHilo();
+        proceso.start();
     }
 }
