@@ -11,5 +11,12 @@ public class Hilo extends Thread {
 
     public void run() {
 		System.out.println("Hilo ejecutandose con clasa Thread");
+
+		// class Runnable
+	}
+
+	@Override
+	public String toString() {
+		return super.toString();
 	}
 }
