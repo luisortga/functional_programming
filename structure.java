@@ -14,7 +14,7 @@ public class structure {
 
         // array no puedes eliminar datos, solo pudes hacer nullos o 0
 
-        String[] names = {"Luis", "Monica", "Emilio", null, null};
+        String[] names = {"Luis", "Monica", "Emilio", "joseph", null, null};
 
         names[3] = "Melissa"; // añadir datos
         names[4] = "Ortega";
@@ -160,7 +160,7 @@ public class structure {
         /* diccionarios en python */
 
         // Al ser HashMap no es una estructura ordenda, no hay indices, not index
-        var callOfDuty = new HashMap<String, String>();
+        var callOfDuty = new HashMap<String,String>();
         HashMap<String, Long> priceCOD = new HashMap<>();
 
         // añadir elementos
