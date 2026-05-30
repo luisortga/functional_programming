@@ -9,6 +9,10 @@ public class Runnable {
 
         List<Locatable> items = new ArrayList<>();
         items.add(new Car("rimac"));
-        items.add(new Phone("Samsung"));
+        items.add(new Phone("samsung"));
+        items.add(new Car("zenvo"));
+        items.add(new Phone("sony"));
+
+        items.forEach(System.out::println);
     }
 }

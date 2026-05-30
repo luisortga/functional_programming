@@ -15,4 +15,9 @@ public class Car implements Locatable{
     public boolean locationIsValid() {
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Hypercar with performance " + this.name;
+    }
 }

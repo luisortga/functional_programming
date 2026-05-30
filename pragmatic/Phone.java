@@ -15,4 +15,9 @@ public class Phone implements Locatable {
     public boolean locationIsValid() {
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "mobile with snapdragon Gen 8 " + this.name;
+    }
 }
