@@ -11,6 +11,10 @@ public class Phone implements Locatable {
         return null;
     }
 
+    public boolean isOverclocked() {
+        return false;
+    }
+
     @Override
     public boolean locationIsValid() {
         return false;
