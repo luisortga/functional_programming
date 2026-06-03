@@ -21,6 +21,12 @@ public class Hilo extends Thread {
         return Hilo.iterador;
     }
 
+    public void encript(float f) {
+        if (f < 0) {
+          System.out.println("Error");
+        }
+    }
+
 	@Override
 	public String toString() {
 		return super.toString();
