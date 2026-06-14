@@ -26,7 +26,7 @@ public class MultiCoreTasks {
     public static void main(String[] args) throws Exception {
 
         // 1) Crear un pool con exactamente 4 hilos (uno por core físico)
-        ExecutorService executor = Executors.newFixedThreadPool(8);
+        ExecutorService executor = Executors.newFixedThreadPool(4);
 
         // 2) Definir 4 tareas como Callable (pueden devolver un valor)
         List<Callable<String>> tareas = new ArrayList<>();
